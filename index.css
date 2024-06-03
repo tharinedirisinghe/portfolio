@@ -5,10 +5,10 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #3895f9;
     color: white;
     text-align: center;
-    padding: 2em 0;
+    padding: 1.2em 0;
 }
 
 header h1 {
@@ -25,4 +25,34 @@ section {
 
 .project h3 {
     margin-top: 0;
+}
+
+nav {
+    background-color: #919191; /* Background color */
+    text-align: center; /* Center align the list */
+    padding: 0.5em 0; /* Add some padding */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets from list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+}
+
+nav ul li a {
+    display: inline-block; /* Make the link a block element */
+    padding: 10px 20px; /* Add padding to each link */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    transition: color 0.3s; /* Add transition effect for color change */
+}
+
+nav ul li a:hover {
+    color: black; /* Text color on hover */
 }
