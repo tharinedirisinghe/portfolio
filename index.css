@@ -5,10 +5,10 @@ body {
 }
 
 header {
-    background-color: #3895f9;
+    background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 1.2em 0;
+    padding: 1em 0;
 }
 
 header h1 {
@@ -28,7 +28,7 @@ section {
 }
 
 nav {
-    background-color: #919191; /* Background color */
+    background-color: #6c757d; /* Background color */
     text-align: center; /* Center align the list */
     padding: 0.5em 0; /* Add some padding */
 }
