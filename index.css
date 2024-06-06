@@ -112,7 +112,7 @@ footer a:hover {
     .about-container img {
         margin-left: 0; /* Remove left margin */
         margin-top: 20px; /* Add top margin */
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         order: 1; /* Image first on small screens */
     }
 
