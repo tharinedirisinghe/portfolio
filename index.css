@@ -28,6 +28,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
 nav ul li {
@@ -48,28 +49,72 @@ nav ul li a:hover {
 
 section h1{
     text-align: center;
+    font-size: 2em; /* Adjusted for better readability on mobile */
 }
 
 #about, #projects, #contact {
-    padding: 50px;
+    padding: 20px; /* Reduced padding for better fit on small screens */
     background-color: #d6d6d6cd;
-    margin: 50px;
-    margin-bottom: 150px;
+    margin: 20px; /* Reduced margin */
+    margin-bottom: 80px; /* Reduced bottom margin */
+}
+
+.project {
+    margin-bottom: 30px; /* Space between projects */
 }
 
 .project h4 {
     margin: 0;
 }
 
+.project fieldset {
+    border: 1px solid #34495E;
+    padding: 10px; /* Adjusted padding */
+    width: 100%; /* Ensures fieldset takes full width */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+
 #contact p {
     text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #34495E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2C3E50;
 }
 
 footer {
     background-color: #2C3E50;
     color: white;
     text-align: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     padding: 1em 0;
@@ -110,9 +155,34 @@ footer p{
 }
 
 @media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    #contact {
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+
+    form {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    form input, form textarea, form button {
+        padding: 8px;
+    }
+
     .about-container {
         flex-direction: column; /* Stack items vertically on small screens */
         text-align: center; /* Center text */
+        
     }
 
     .about-container img {
@@ -125,4 +195,91 @@ footer p{
     .about-text {
         order: 2; /* Text second on small screens */
     }
+
+    #about, #projects, #contact {
+        padding: 10px; /* Further reduce padding for smaller screens */
+        margin: 10px; /* Further reduce margin for smaller screens */
+        margin-bottom: 50px; /* Further reduce bottom margin */
+    }
+
+    section h1 {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+    }
+
+    .project fieldset {
+        padding: 5px; /* Further reduced padding */
+    }
 }
+
+/* Add styles for legend and fieldset */
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    /* Ensure text wraps */
+    word-wrap: break-word;
+    word-break: break-all;/* add this */
+    /* Ensure long words break */
+    overflow: hidden;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .project {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .project h4,
+  .project p,
+  .project ul {
+    font-size: 1em;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  
+  .project ul {
+    padding-left: 20px;
+  }
+  
+  .project ul li {
+    list-style-type: disc;
+  }
+  
+  @media (max-width: 768px) {
+    legend {
+      font-size: 1em;
+      padding: 5px;
+      word-break: break-all
+    }
+    fieldset {
+      padding: 10px;
+    }
+    #projects {
+      padding: 20px;
+      margin: 20px;
+      margin-bottom: 50px;
+    }
+    #projects h1 {
+      font-size: 1.5em;
+    }
+    .project h4,
+    .project p,
+    .project ul {
+      font-size: 0.9em;
+    }
+  }
