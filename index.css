@@ -27,8 +27,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -55,60 +55,32 @@ section h1{
 #about, #projects, #contact {
     padding: 20px; /* Reduced padding for better fit on small screens */
     background-color: #d6d6d6cd;
-    margin: 20px; /* Reduced margin */
-    margin-bottom: 80px; /* Reduced bottom margin */
+    margin: 20px;
+    margin-bottom: 80px;
 }
 
-.project {
-    margin-bottom: 30px; /* Space between projects */
-}
+/*About Me styling*/
 
-.project h4 {
-    margin: 0;
-}
-
-.project fieldset {
-    border: 1px solid #34495E;
-    padding: 10px; /* Adjusted padding */
-    width: 100%; /* Ensures fieldset takes full width */
-    box-sizing: border-box; /* Includes padding in the width */
-}
-
-#contact p {
-    text-align: center;
-}
-
-form {
+.about-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-evenly;
+}
+
+.about-container img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    order: 2;
+}
+
+.about-text {
     max-width: 600px;
-    margin: 0 auto;
+    order: 1;
 }
 
-form label {
-    font-weight: bold;
-}
-
-form input, form textarea, form button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-form button {
-    background-color: #34495E;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #2C3E50;
-}
+/*Footer styling*/
 
 footer {
     background-color: #2C3E50;
@@ -135,23 +107,90 @@ footer p{
    margin: 0;
 }
 
-.about-container {
+/*Projects styling*/
+
+.project {
+    margin-bottom: 30px; /* Space between projects */
     display: flex;
-    align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-evenly;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
 }
 
-.about-container img {
+.project h4 {
+    margin: 0;
+}
+
+.centered-list {
+    display: inline-block; /* Make the list inline-block to center it */
+    text-align: left; /* Ensure list items are left-aligned */
+  }
+
+.project ul li {
+    list-style-type: disc;
+  }
+
+.project fieldset {
+    border: 1px solid #34495E;
+    padding: 10px;
+    width: 100%; /* Ensures fieldset takes full width */
+    box-sizing: border-box; /* Includes padding in the width */
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
     max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
-    order: 2;
+    box-sizing: border-box;
+    white-space: normal;
+    word-wrap: break-word; /* Ensure text wraps */
+    word-break: break-all;
+    overflow: hidden; /* Ensure long words break */
+    text-align: center;
+  }
+
+/*Contact styling*/
+
+#contact p {
+    text-align: center;
 }
 
-.about-text {
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     max-width: 600px;
-    order: 1;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #34495E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2C3E50;
 }
 
 @media (max-width: 768px) {
@@ -164,6 +203,8 @@ footer p{
         padding: 10px 0;
     }
 
+    /*Contact styling*/
+
     #contact {
         padding: 10px;
         margin: 10px;
@@ -172,17 +213,17 @@ footer p{
 
     form {
         padding: 10px;
-        gap: 8px;
     }
 
     form input, form textarea, form button {
-        padding: 8px;
+        padding: 10px;
     }
+
+    /*About Me styling*/
 
     .about-container {
         flex-direction: column; /* Stack items vertically on small screens */
-        text-align: center; /* Center text */
-        
+        text-align: center;
     }
 
     .about-container img {
@@ -206,80 +247,25 @@ footer p{
         font-size: 1.5em; /* Adjusted font size for smaller screens */
     }
 
+    /*Projects styling*/
+
     .project fieldset {
         padding: 5px; /* Further reduced padding */
     }
-}
 
-/* Add styles for legend and fieldset */
-
-legend {
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    max-width: 100%;
-    box-sizing: border-box;
-    white-space: normal;
-    /* Ensure text wraps */
-    word-wrap: break-word;
-    word-break: break-all;/* add this */
-    /* Ensure long words break */
-    overflow: hidden;
-  }
-  
-  fieldset {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  
-  .project {
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  .project h4,
-  .project p,
-  .project ul {
-    font-size: 1em;
-    padding: 5px 0;
-    margin: 5px 0;
-  }
-  
-  .project ul {
-    padding-left: 20px;
-  }
-  
-  .project ul li {
-    list-style-type: disc;
-  }
-  
-  @media (max-width: 768px) {
     legend {
-      font-size: 1em;
-      padding: 5px;
-      word-break: break-all
-    }
-    fieldset {
-      padding: 10px;
-    }
-    #projects {
-      padding: 20px;
-      margin: 20px;
-      margin-bottom: 50px;
-    }
-    #projects h1 {
-      font-size: 1.5em;
-    }
-    .project h4,
-    .project p,
-    .project ul {
-      font-size: 0.9em;
-    }
-  }
+        font-size: 1em;
+        padding: 5px;
+        word-break: break-all
+      }
+     
+      #projects {
+        padding: 20px;
+        margin: 20px;
+        margin-bottom: 50px;
+      }
+
+      #projects h1 {
+        font-size: 1.5em;
+      }
+}
