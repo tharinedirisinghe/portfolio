@@ -9,17 +9,35 @@ header {
     background-color: #2C3E50;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
+    
 }
 
-header h1, h3 {
+header h3 {
     margin: 0;
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 70px;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
 
 nav {
     background-color: #34495E;
     text-align: center;
-    padding: 0.5em 0;
+    border: 2px solid #555; /* Border for the navbar */
+
 }
 
 nav ul {
@@ -33,6 +51,12 @@ nav ul {
 
 nav ul li {
     display: inline;
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+   border: 2px solid white; /* Border for the navbar */
 }
 
 nav ul li a {
@@ -59,6 +83,13 @@ section h1{
     margin-bottom: 80px;
 }
 
+#about h1{
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 /*About Me styling*/
 
 .about-container {
@@ -68,16 +99,36 @@ section h1{
     justify-content: space-evenly;
 }
 
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #4a4a4a, 0 0 10px #4a4a4a, 0 0 15px #4a4a4a, 0 0 20px #4a4a4a, 0 0 25px #4a4a4a;
+    }
+    100% {
+        box-shadow: 0 0 10px #4a4a4a, 0 0 20px #4a4a4a, 0 0 30px #4a4a4a, 0 0 40px #4a4a4a, 0 0 50px #4a4a4a;
+    }
+}
+
 .about-container img {
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
     order: 2;
+    animation: glow 5s infinite alternate;
 }
+
+#about p{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 25px;
+}
+
 
 .about-text {
     max-width: 600px;
     order: 1;
+    
 }
 
 /*Footer styling*/
@@ -105,15 +156,67 @@ footer a:hover {
 
 footer p{
    margin: 0;
+   font-size: 20px;
+   font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 /*Projects styling*/
+
+#projects h1{
+   
+        font-size: 50px;
+        font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+    
+}
 
 .project {
     margin-bottom: 30px; /* Space between projects */
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px; /* Adjust as needed */
+    border: 2px solid #000; /* Your preferred border style */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    max-width: 100%; /* Makes sure the card doesn't exceed container */
+    min-height: 100px; /* Prevents the cards from being too small */
+}
+
+.project.hover-effect {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexibility for content size */
+.project p, .project h3, .project img {
+    width: 100%;
+    max-width: 100%;
+    text-align: center; /* Optional: Keep text centered */
+}
+
+/* Optional: Adjust margins between content inside */
+.project h3 {
+    margin: 10px 0;
+}
+
+
+
+.project p {
+    margin: 5px 0;
+}
+
+/* Adjust padding based on content, you can fine-tune */
+.project img {
+    margin-bottom: 15px; /* Space below image if there's text */
+    max-width: 100%;
+    height: auto; /* Keeps the image responsive */
 }
 
 .project h4 {
@@ -249,6 +352,7 @@ form button:hover {
 
     /*Projects styling*/
 
+    
     .project fieldset {
         padding: 5px; /* Further reduced padding */
     }
@@ -269,3 +373,4 @@ form button:hover {
         font-size: 1.5em;
       }
 }
+
