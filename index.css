@@ -101,8 +101,8 @@ section h1 {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px #4a4a4a, 0 0 10px #4a4a4a, 0 0 15px #4a4a4a,
-      0 0 20px #4a4a4a, 0 0 25px #4a4a4a;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white,
+      0 0 25px white;
   }
   100% {
     box-shadow: 0 0 10px #4a4a4a, 0 0 20px #4a4a4a, 0 0 30px #4a4a4a,
@@ -241,7 +241,7 @@ footer p {
   font-weight: 800;
   font-style: normal;
   font-size: 3vw; /* This will make the font size responsive */
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
 }
 
 .centered-list {
@@ -414,9 +414,7 @@ form button:hover {
   }
 
   .project h2 {
-    
-    font-size: 4vw; /* This will make the font size responsive */
-    
+    font-size: 5.5vw; /* This will make the font size responsive */
   }
 
   .project fieldset {
