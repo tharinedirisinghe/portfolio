@@ -17,3 +17,4 @@ document.addEventListener("DOMContentLoaded", function() {
     const image = document.querySelector('.about-container img');
     // You can also dynamically add classes or styles if needed
 });
+
