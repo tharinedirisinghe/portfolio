@@ -116,7 +116,7 @@ section h1 {
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
   order: 2;
-  animation: glow 5s infinite alternate;
+  animation: glow 4s infinite alternate;
 }
 
 #about p {
@@ -213,10 +213,10 @@ footer p {
 }
 
 .project p {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
   margin: 0;
   width: 100%;
   max-width: 100%;
@@ -225,7 +225,7 @@ footer p {
 
 .project h4 {
   margin: 0;
-
+font-size: 25px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -236,6 +236,7 @@ footer p {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 800;
   font-style: normal;
+  font-size: 30px;
 }
 
 .centered-list {
@@ -335,6 +336,19 @@ form button:hover {
 
   nav ul li {
     padding: 5px 0; /* Adjust padding */
+    font-size: 4vw; /* Responsive font size */
+  }
+
+  footer {
+    padding: 0.5em 0; /* Reduce padding on smaller screens */
+  }
+
+  footer p {
+    font-size: 4vw; /* Responsive font size */
+  }
+
+  footer a {
+    margin: 0 3px; /* Reduce margin for links */
     font-size: 4vw; /* Responsive font size */
   }
 
