@@ -3,80 +3,375 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tharin Edirisinghe</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Tharin Edirisinghe — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Tharin Edirisinghe, a software engineer and tech educator based in Colombo, Sri Lanka."
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Tharin Edirisinghe</h1>
-      <h3>IT Undergraduate | ICT Teacher | Content Creator</h3>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-name">Tharin Edirisinghe</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <nav>
-      <ul>
-        <li>
-          <b><a href="index.html">About Me</a></b>
-        </li>
-        <li>
-          <b><a href="projects.html">Projects</a></b>
-        </li>
-        <li>
-          <b><a href="contact.html">Contact</a></b>
-        </li>
-      </ul>
-    </nav>
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="home">
+        <div class="wrap">
+          <div class="hero-top">
+            <div>
+              <p class="eyebrow">Portfolio — Colombo, Sri Lanka</p>
+              <h1 class="headline">
+                I build <em>technology</em> for a living — and teach it
+                because I love it.
+              </h1>
+              <p class="sub">
+                Software engineer with an internship at Rootcode, a B.Sc
+                (Hons) IT undergraduate at the University of Moratuwa, and a
+                tech tutor and workshop host since 2023.
+              </p>
+              <div class="hero-cta">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-ghost" href="#contact">Get in touch</a>
+              </div>
+            </div>
+            <div class="hero-photo">
+              <img src="images/hero.jpg" alt="Tharin Edirisinghe" />
+            </div>
+          </div>
 
-    <section id="about">
-      <h1>About Me</h1>
-      <div class="about-container">
-        <img src="IMG-20230221-WA00451.png" alt="Tharin Edirisinghe" />
-        <div class="about-text">
-          <p>
-            Hi, I'm Tharin, an undergraduate student at the
-            <b
-              >Faculty of Information Technology, University of Moratuwa, Sri
-              Lanka</b
-            >.
-          </p>
-          <p>
-            I teach ICT for
-            <b>G.C.E Advanced Level and G.C.E Ordinary Level</b> students,
-            guiding them to success in their exams.
-          </p>
-          <p>
-            I'm also a <b>social media content creator</b>, sharing insights and
-            tutorials across various fields.
-          </p>
-          <p
-            style="
-              font-family: IBM Plex Mono, monospace;
-              font-weight: 100;
-              font-style: normal;
-            "
-          >
-            Thank you for visiting my portfolio. Feel free to explore my work
-            and connect with me for collaborations or inquiries.
+          <div class="stat-grid">
+            <div class="stat-cell"><b>5+</b><span>Shipped projects</span></div>
+            <div class="stat-cell"><b>4+ yrs</b><span>Tutoring &amp; workshops</span></div>
+            <div class="stat-cell"><b>4+</b><span>Articles written</span></div>
+          </div>
+
+          <div class="card-row">
+            <div class="card">
+              <span class="chip"></span>
+              <h3>Software Engineering</h3>
+              <p>
+                React, TypeScript, .NET, Spring Boot — designing and shipping
+                full-stack systems end to end, from backend architecture to
+                production UI.
+              </p>
+            </div>
+            <div class="card">
+              <span class="chip"></span>
+              <h3>Teaching Tech</h3>
+              <p>
+                Freelance tutor since 2023, plus tech workshops and mentoring
+                — a passion project that pays its own way.
+              </p>
+            </div>
+            <div class="card">
+              <span class="chip"></span>
+              <h3>Writing &amp; Community</h3>
+              <p>
+                A Medium blog on what I build and break, plus regular
+                volunteering in tech community and education initiatives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about">
+        <div class="wrap">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I'm a software engineer completing my B.Sc (Hons) in IT at the
+            University of Moratuwa, with a software engineering internship at
+            Rootcode behind me. Since 2023 I've also been teaching tech —
+            tutoring, workshops, the odd video — because explaining how
+            things work is nearly as satisfying as building it.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience">
+        <div class="wrap">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">Jan 2026 – Jul 2026</div>
+              <div>
+                <p class="timeline-role">Software Engineer Intern</p>
+                <p class="timeline-org">Rootcode · Colombo, Sri Lanka</p>
+                <p class="timeline-desc">
+                  Built with .NET Framework and C# on SmartSchool, a
+                  multi-tenant school-management platform used by real
+                  schools — including a major Organizations &amp; Branches
+                  architecture rollout and a Guardian/Parent portal built
+                  from scratch.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Jan 2023 – Present</div>
+              <div>
+                <p class="timeline-role">ICT Teacher, G.C.E. Advanced Level</p>
+                <p class="timeline-org">Freelance · Sri Jayawardenepura Kotte</p>
+                <p class="timeline-desc">
+                  Teaching ICT to grade 12 &amp; 13 students preparing for the
+                  G.C.E. A/L examination, in English medium.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2023 – Present</div>
+              <div>
+                <p class="timeline-role">B.Sc (Hons) Information Technology</p>
+                <p class="timeline-org">University of Moratuwa</p>
+                <p class="timeline-desc">
+                  Faculty of Information Technology. Dean's List, Semester 2.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects">
+        <div class="wrap">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="project-grid">
+            <div class="project-card featured">
+              <span class="project-tag">Rootcode Internship</span>
+              <h3>SmartSchool</h3>
+              <p>
+                Multi-tenant school-management platform used by real
+                schools. I led a major Organizations &amp; Branches
+                architecture rollout, built the Guardian/Parent portal from
+                scratch, and shipped an Access Control feature end-to-end.
+              </p>
+              <div class="tech-list">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">FastEndpoints</span>
+                <span class="tech-tag">Entity Framework Core</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://smartschool.rootcode.foundation/" target="_blank" rel="noopener">Live site →</a>
+                <span class="no-link">Source is private — Rootcode-owned</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <span class="project-tag">Team Lead · Full-Stack</span>
+              <h3>AuctiX</h3>
+              <p>
+                Real-time, transparent online auction platform with live
+                bidding, seller auction management, and full auction
+                exploration with filtering and search.
+              </p>
+              <div class="tech-list">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/TeamHelios-29/AuctiX" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <span class="project-tag">Solo Project</span>
+              <h3>Automated Exam Delivery System</h3>
+              <p>
+                A Google Apps Script system that automates weekly delivery of
+                revision papers to my students, replacing a manual routine I
+                used to run by hand every week.
+              </p>
+              <div class="tech-list">
+                <span class="tech-tag">Google Apps Script</span>
+                <span class="tech-tag">Sheets</span>
+                <span class="tech-tag">Gmail API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tharinedirisinghe/automated-exam-delivery-system" target="_blank" rel="noopener">GitHub →</a>
+                <a href="https://medium.com/@tharinedirisinghe/i-was-tired-of-manually-sending-exam-papers-every-week-so-i-built-a-system-that-never-forgets-989cf4d66588" target="_blank" rel="noopener">Read the story →</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <span class="project-tag">Solo Project</span>
+              <h3>ScoreHub</h3>
+              <p>
+                A React Native (Expo) app for following live sports scores,
+                browsing matches and team details, and tracking favorites
+                with secure accounts and dark mode.
+              </p>
+              <div class="tech-list">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tharinedirisinghe/ScoreHub" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <span class="project-tag">Front-End + Hardware</span>
+              <h3>Smart Exam Hall</h3>
+              <p>
+                An automated exam hall system using fingerprint scanning to
+                register, verify, and mark student attendance, with a
+                desktop client to display allocation and exam status.
+              </p>
+              <div class="tech-list">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">ESP32</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tharinedirisinghe/client-side-desktop-app" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WRITING ============ -->
+      <section id="writing">
+        <div class="wrap">
+          <p class="eyebrow">Writing</p>
+          <h2 class="section-title">From the Blog</h2>
+          <div class="writing-list">
+            <a
+              class="writing-item"
+              href="https://medium.com/@tharinedirisinghe/i-was-tired-of-manually-sending-exam-papers-every-week-so-i-built-a-system-that-never-forgets-989cf4d66588"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="writing-main">
+                <p class="writing-title">
+                  I Was Tired of Manually Sending Exam Papers Every Week — So
+                  I Built a System That Never Forgets
+                </p>
+                <p class="writing-summary">
+                  How a weekly WhatsApp routine for distributing exam papers
+                  became a fully automated system, using free Google tools.
+                </p>
+              </div>
+              <span class="writing-date">Jul 2026</span>
+            </a>
+            <a
+              class="writing-item"
+              href="https://medium.com/@tharinedirisinghe/best-ai-for-brainstorming-in-2026-i-compared-chatgpt-gemini-claude-grok-and-perplexity-71a09ed7eded"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="writing-main">
+                <p class="writing-title">Best AI for Brainstorming in 2026?</p>
+                <p class="writing-summary">
+                  A hands-on comparison of ChatGPT, Gemini, Claude, Grok, and
+                  Perplexity for brainstorming.
+                </p>
+              </div>
+              <span class="writing-date">Apr 2026</span>
+            </a>
+            <a
+              class="writing-item"
+              href="https://medium.com/@tharinedirisinghe/what-i-learned-from-my-first-pcb-design-ae3efa92e157"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="writing-main">
+                <p class="writing-title">
+                  What I Learned from My First PCB Design
+                </p>
+                <p class="writing-summary">
+                  Real lessons from designing my first PCB, beyond the usual
+                  tutorials.
+                </p>
+              </div>
+              <span class="writing-date">Aug 2024</span>
+            </a>
+            <a
+              class="writing-item"
+              href="https://medium.com/@tharinedirisinghe/my-portfolio-web-v1-0-259aa13b99ce"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="writing-main">
+                <p class="writing-title">My Portfolio Web v1.0</p>
+                <p class="writing-summary">
+                  The story of building this portfolio from scratch, and
+                  what I learned along the way.
+                </p>
+              </div>
+              <span class="writing-date">Jun 2024</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact">
+        <div class="wrap">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="120da044-7f10-4269-83e0-959163d16149" />
+            <input type="hidden" name="subject" value="New message from your portfolio" />
+            <input type="checkbox" name="botcheck" style="display: none" />
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2024 Tharin Edirisinghe</p>
-      <p>
-        Follow me on:
-        <a
-          href="https://www.linkedin.com/in/tharin-edirisinghe-838a54223"
-          target="_blank"
-          >LinkedIn</a
-        >
-        |
-        <a href="https://github.com/tharinedirisinghe" target="_blank"
-          >GitHub</a
-        >
-      </p>
+      <div class="footer-inner">
+        <p>&copy; 2026 Tharin Edirisinghe</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/tharin-edirisinghe-838a54223" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/tharinedirisinghe" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://medium.com/@tharinedirisinghe" target="_blank" rel="noopener">Medium</a>
+        </div>
+      </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
