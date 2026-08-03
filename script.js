@@ -13,4 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.setAttribute("aria-expanded", "false");
     });
   });
+
+  const copyBtn = document.getElementById("copyEmailBtn");
+  if (copyBtn) {
+    const defaultLabel = copyBtn.textContent;
+    copyBtn.addEventListener("click", async () => {
+      const email = copyBtn.dataset.email;
+      try {
+        await navigator.clipboard.writeText(email);
+        copyBtn.textContent = "Copied!";
+      } catch {
+        copyBtn.textContent = "Copy failed";
+      }
+      setTimeout(() => {
+        copyBtn.textContent = defaultLabel;
+      }, 2000);
+    });
+  }
 });
