@@ -9,11 +9,12 @@ Personal portfolio site for **Tharin Edirisinghe** — software engineer and tec
 A single-page portfolio covering:
 
 - **Home** — intro, quick stats, and highlights
-- **About** — a short bio
+- **About** — a short bio, a pull-quote, and a few quick facts, next to a photo
 - **Experience** — internship at Rootcode, freelance tech tutoring since 2023, B.Sc (Hons) IT at the University of Moratuwa
+- **Gallery** ("Beyond the Code") — photos from community service, teaching, and other things outside the code editor
 - **Projects** — SmartSchool, AuctiX, Automated Exam Delivery System, ScoreHub, Smart Exam Hall
 - **Writing** — links out to Medium posts
-- **Contact** — a working contact form (via [Web3Forms](https://web3forms.com/))
+- **Contact** — a direct `mailto:` link with a copy-to-clipboard button, no form or third-party backend
 
 ## Tech stack
 
@@ -35,15 +36,11 @@ Then open `http://localhost:8000` in a browser.
 .
 ├── index.html          # the whole site — single scrolling page
 ├── style.css            # design system: colors, type, layout
-├── script.js             # mobile nav toggle
+├── script.js             # mobile nav toggle + copy-email button
 ├── fonts/                # self-hosted Switzer + Libre Baskerville
-├── images/               # hero photo
+├── images/               # hero, about, and gallery photos
 └── google*.html          # Google Search Console verification file
 ```
-
-## Contact form
-
-The contact form posts to [Web3Forms](https://web3forms.com/), a free static-form backend — no server or account dashboard required. The access key embedded in `index.html` is meant to be public (per Web3Forms' own setup instructions), not a secret credential.
 
 ## License
 
